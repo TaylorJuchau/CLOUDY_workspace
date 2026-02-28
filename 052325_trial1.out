@@ -1,0 +1,15 @@
+                                                          Cloudy 23.01
+                                                         www.nublado.org
+
+                                                  PRNG seed: 0x5792d66cfa572204
+
+                       **************************************23Jul25**************************************
+                       *                                                                                 *
+                       * title 052325 trial1                                                             *
+                       * Ionization parameter -2                                                         *
+                       * hden 3                                                                          *
+                       * cmb                                                                             *
+ This command has come between a previous ordered pair of continuum shape and luminosity commands.
+ Reorder the commands to complete each continuum specification before starting another.
+ Sorry.
+ [Stop in ParseCMB at parse_CMB.cpp:25, something went wrong]

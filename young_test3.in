@@ -1,0 +1,17 @@
+title young_test3
+Ionization parameter -2
+table SED "fsps_young.ascii"
+hden 3
+cmb
+iterate to convergence
+stop temperature 100 K
+stop neutral column density 10
+set temperature floor 2.73
+set nchrg 2
+normalize to "H  1" 18751.0 angstroms
+no level 2 lines
+abundances ism
+grains ISM abundance scaling 1.5
+COSMIC RAYS BACKGROUND
+save lines sum, array young_test3 "H  1" no extinction
+save grains extinction "extinction.dat"

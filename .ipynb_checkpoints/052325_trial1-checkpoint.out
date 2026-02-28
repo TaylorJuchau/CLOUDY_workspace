@@ -1,0 +1,35 @@
+                                                          Cloudy 23.01
+                                                         www.nublado.org
+
+                                                  PRNG seed: 0x82e5455b379c22dc
+
+                       **************************************23Jul25**************************************
+                       *                                                                                 *
+                       * title 052325 trial1                                                             *
+                       * Ionization parameter -2                                                         *
+                       * table SED "fsps_iso.ascii"                                                      *
+
+PROBLEM DISASTER I could not open the file SED/fsps_iso.ascii
+
+These are all the paths I tried:
+   ==/d/ret1/Taylor/jupyter_notebooks/Research/CLOUDY_stuff/SED/fsps_iso.ascii==
+   ==/d/ret1/Taylor/jupyter_notebooks/Research/CLOUDY_stuff/fsps_iso.ascii==
+   ==/d/ret1/Taylor/CLOUDY/c23.01/data/SED/fsps_iso.ascii==
+   ==/d/ret1/Taylor/CLOUDY/c23.01/data/fsps_iso.ascii==
+
+Although there may be other reasons you have received this
+error, the most likely is that you mistyped the file name.
+It is is also possible that the path has not been properly set. It
+should point to the data directory you downloaded from the web site.
+
+Please use "make" to compile the code. This will automatically
+set the path correctly. Alternatively you can set the environment
+variable CLOUDY_DATA_PATH to define the data directory search path
+using the shell command 
+export CLOUDY_DATA_PATH="<search path>"
+from a bash command prompt.
+
+Sorry.
+
+
+ [Stop in ErrorMessage at cpu.cpp:673, something went wrong]

@@ -1,0 +1,119 @@
+                                                          Cloudy 23.01
+                                                         www.nublado.org
+
+                                                  PRNG seed: 0x47496e4245d333e0
+
+                       **************************************23Jul25**************************************
+                       *                                                                                 *
+                       * title young test2                                                               *
+                       * Ionization parameter -2                                                         *
+                       * table SED "fsps_young.ascii"                                                    *
+                       * hden 3                                                                          *
+                       * cmb                                                                             *
+                       * iterate to convergence                                                          *
+                       * stop temperature 100 K                                                          *
+                       * set temperature floor 2.73                                                      *
+                       * set nchrg 2                                                                     *
+                       * normalize to "H  1" 18751.0 angstroms                                           *
+                       * no level 2 lines                                                                *
+                       * abundances ism                                                                  *
+                       * #<<< mie_read_opc reading file -- graphite_ism_10.opc                      >>>> *
+                       * #<<< mie_read_opc reading file -- silicate_ism_10.opc                      >>>> *
+                       * grains ISM abundance scaling 1.5                                                *
+                       * #<<< mie_read_opc reading file -- graphite_ism_10.opc                      >>>> *
+ File graphite_ism_10.opc has already been read before, was this intended ?
+                       * #<<< mie_read_opc reading file -- silicate_ism_10.opc                      >>>> *
+ File silicate_ism_10.opc has already been read before, was this intended ?
+                       * COSMIC RAYS BACKGROUND                                                          *
+                       * save lines sum, array young test2 "H  1" no extinction                          *
+                       * save grains extinction "extinction.dat"                                         *
+                       *                                                                                 *
+                       ***********************************************************************************
+
+
+
+ NOTE Setcon: continuum has zero intensity starting at  1.0016e+01 Ryd.
+  2666 cells in the incident continuum have zero intensity.  Problems???
+
+           9244CellPeak1.00E+00   Lo 3.04e-09=  29.98m   Hi-Con:7.13E+06 Ryd   E(hi):7.35E+06Ryd     E(hi):     100.00 MeV
+           I(nu>1ryd):   1.3643   Average nu:3.540E+00   I( X-ray):   0.0000   I(BalC):   0.3886     Phi(BalmrC):  11.3158
+           phi(1.0-1.8):10.9397   phi(1.8-4.0): 11.053   phi(4.0-20): 10.999   phi(20--):  0.000     Ion pht flx:2.998E+11
+           I(gam ray):   0.0000   phi(gam r):   0.0000   I(Infred):  -0.1041   Alf(ox):   0.0000     Total inten:   1.4211
+           U(1.0----):1.000E-02   U(4.0----):3.330E-03   T(En-Den):1.847E+01   T(Comp):1.769E+05     nuJnu(912A):3.264E+00
+           Occ(FarIR):5.668E+03   Occ(H n=6):6.414E-12   Occ(1Ryd):1.506E-16   Occ(4R):2.050E-18     Occ (Nu-hi):0.000E+00
+           Tbr(FarIR):2.725E+00   Tbr(H n=6):2.809E-08   Tbr(1Ryd):2.378E-11   Tbr(4R):1.297E-12     Tbr (Nu-hi):0.000E+00
+  
+                                                  Gas Phase Chemical Composition
+        H :  0.0000  He: -1.0088  Li:-10.2676  B :-10.0506  C : -3.6003  N : -4.1002  O : -3.4962  F : -7.6990  Ne: -3.9101
+        Na: -6.5003  Mg: -4.8996  Al: -7.1002  Si: -5.5003  P : -6.7959  S : -4.4895  Cl: -7.0000  Ar: -5.5498  K : -7.9586
+        Ca: -9.3872  Ti: -9.2366  V :-10.0000  Cr: -8.0000  Mn: -7.6383  Fe: -6.2000  Co: -8.2291  Ni: -7.7399  Cu: -8.8239
+                                                            Zn: -7.6990
+ 
+                                                    Grain Chemical Composition
+                                  C : -3.1574  O : -3.4841  Mg: -4.0862  Si: -4.0862  Fe: -4.0862
+                                                   Sum Atoms Depleted: -30.0000
+                                                   Depletion/Grains-1: -100.00%
+ 
+              Number of grains per hydrogen (scale=1)                         Mass of grains per hydrogen (scale=1)
+        Carbonaceous: -9.413  Silicate: -9.350  PAH: -30.000         Carbonaceous: -2.078  Silicate: -1.850  PAH: -30.000
+
+ ####  1  Te:1.917E+04 Hden:1.000E+03 Ne:1.195E+03 R:1.000E+30 R-R0:7.706E+13 dR:1.541E+14 NTR:  8 Htot:1.163E-17 T912: 1.50e-03###
+ Hydrogen      9.29e-04 9.99e-01 H+o/Hden 1.00e+00 4.04e-11 H-    H2 2.88e-14 1.63e-12 H2+ HeH+ 9.85e-13 Ho+ ColD 1.43e+14 1.54e+17
+ Helium        2.39e-05 2.61e-02 9.74e-01 HeI 2s3S 2.10e-08 Comp H,C 2.50e-24 2.71e-25 Fill Fac 1.00e+00 Gam1/tot 9.93e-01
+ He singlet n  2.39e-05 1.82e-14 3.30e-21 3.83e-21 2.41e-21 3.72e-21 He tripl 2.10e-08 8.20e-19 1.56e-20 7.11e-20 1.33e-20
+ Pressure      NgasTgas 4.40e+07 P(total) 6.07e-09 P( gas ) 6.07e-09 P(Radtn) 0.00e+00 Rad accl 1.48e-06 ForceMul 4.98e+03
+ Texc(La)      3.34e+03 T(I con) 1.85e+01 T(D con) 2.32e+00 T(U tot) 1.85e+01 nT (c+d) 5.02e+06 Prad/Gas 0.00e+00 Pmag/Gas 0.00e+00
+ gra-ism01  *  DustTemp 9.04e+01 Pot Volt 1.25e+00 Chrg (e) 4.13e+00 drf cm/s 8.44e+03 Heating: 1.43e-19 Frac tot 1.23e-02
+ gra-ism02  *  DustTemp 8.80e+01 Pot Volt 1.18e+00 Chrg (e) 6.20e+00 drf cm/s 1.26e+04 Heating: 1.14e-19 Frac tot 9.78e-03
+ gra-ism03  *  DustTemp 8.46e+01 Pot Volt 9.09e-01 Chrg (e) 7.19e+00 drf cm/s 2.38e+04 Heating: 8.67e-20 Frac tot 7.46e-03
+ gra-ism04  *  DustTemp 8.09e+01 Pot Volt 5.90e-01 Chrg (e) 6.86e+00 drf cm/s 4.83e+04 Heating: 6.49e-20 Frac tot 5.58e-03
+ gra-ism05  *  DustTemp 7.70e+01 Pot Volt 2.73e-01 Chrg (e) 4.38e+00 drf cm/s 9.51e+04 Heating: 4.79e-20 Frac tot 4.12e-03
+ gra-ism06  *  DustTemp 7.30e+01 Pot Volt 2.97e-02 Chrg (e)-1.35e-01 drf cm/s 1.33e+05 Heating: 3.48e-20 Frac tot 3.00e-03
+ gra-ism07  *  DustTemp 6.91e+01 Pot Volt-1.89e-01 Chrg (e)-9.12e+00 drf cm/s 1.45e+05 Heating: 2.54e-20 Frac tot 2.19e-03
+ gra-ism08  *  DustTemp 6.50e+01 Pot Volt-3.89e-01 Chrg (e)-2.57e+01 drf cm/s 1.54e+05 Heating: 1.88e-20 Frac tot 1.61e-03
+ gra-ism09  *  DustTemp 6.10e+01 Pot Volt-5.45e-01 Chrg (e)-5.23e+01 drf cm/s 1.62e+05 Heating: 1.40e-20 Frac tot 1.20e-03
+ gra-ism10  *  DustTemp 5.69e+01 Pot Volt-6.64e-01 Chrg (e)-9.34e+01 drf cm/s 1.69e+05 Heating: 1.06e-20 Frac tot 9.11e-04
+ sil-ism01  *  DustTemp 8.53e+01 Pot Volt 2.61e-01 Chrg (e) 7.27e-02 drf cm/s 4.96e+04 Heating: 1.39e-19 Frac tot 1.20e-02
+ sil-ism02  *  DustTemp 8.39e+01 Pot Volt 2.93e-01 Chrg (e) 7.84e-01 drf cm/s 6.46e+04 Heating: 1.16e-19 Frac tot 9.94e-03
+ sil-ism03  *  DustTemp 8.19e+01 Pot Volt 2.50e-01 Chrg (e) 1.25e+00 drf cm/s 8.95e+04 Heating: 9.12e-20 Frac tot 7.85e-03
+ sil-ism04  *  DustTemp 7.93e+01 Pot Volt 1.37e-01 Chrg (e) 8.20e-01 drf cm/s 1.25e+05 Heating: 6.95e-20 Frac tot 5.98e-03
+ sil-ism05  *  DustTemp 7.62e+01 Pot Volt 4.68e-03 Chrg (e)-9.08e-01 drf cm/s 1.54e+05 Heating: 5.13e-20 Frac tot 4.41e-03
+ sil-ism06  *  DustTemp 7.27e+01 Pot Volt-2.60e-01 Chrg (e)-8.57e+00 drf cm/s 1.70e+05 Heating: 3.73e-20 Frac tot 3.21e-03
+ sil-ism07  *  DustTemp 6.89e+01 Pot Volt-5.08e-01 Chrg (e)-2.29e+01 drf cm/s 1.81e+05 Heating: 2.69e-20 Frac tot 2.31e-03
+ sil-ism08  *  DustTemp 6.51e+01 Pot Volt-7.21e-01 Chrg (e)-4.69e+01 drf cm/s 1.88e+05 Heating: 1.94e-20 Frac tot 1.67e-03
+ sil-ism09  *  DustTemp 6.12e+01 Pot Volt-8.89e-01 Chrg (e)-8.47e+01 drf cm/s 1.90e+05 Heating: 1.42e-20 Frac tot 1.22e-03
+ sil-ism10     DustTemp 5.75e+01 Pot Volt-1.01e+00 Chrg (e)-1.42e+02 drf cm/s 1.90e+05 Heating: 1.06e-20 Frac tot 9.08e-04
+ gra-ism01  *  DustTemp 9.04e+01 Pot Volt 1.25e+00 Chrg (e) 4.13e+00 drf cm/s 8.44e+03 Heating: 2.15e-19 Frac tot 1.85e-02
+ gra-ism02  *  DustTemp 8.80e+01 Pot Volt 1.18e+00 Chrg (e) 6.20e+00 drf cm/s 1.26e+04 Heating: 1.71e-19 Frac tot 1.47e-02
+ gra-ism03  *  DustTemp 8.46e+01 Pot Volt 9.09e-01 Chrg (e) 7.19e+00 drf cm/s 2.38e+04 Heating: 1.30e-19 Frac tot 1.12e-02
+ gra-ism04  *  DustTemp 8.09e+01 Pot Volt 5.90e-01 Chrg (e) 6.86e+00 drf cm/s 4.83e+04 Heating: 9.73e-20 Frac tot 8.37e-03
+ gra-ism05  *  DustTemp 7.70e+01 Pot Volt 2.73e-01 Chrg (e) 4.38e+00 drf cm/s 9.51e+04 Heating: 7.18e-20 Frac tot 6.17e-03
+ gra-ism06  *  DustTemp 7.30e+01 Pot Volt 2.97e-02 Chrg (e)-1.35e-01 drf cm/s 1.33e+05 Heating: 5.23e-20 Frac tot 4.50e-03
+ gra-ism07  *  DustTemp 6.91e+01 Pot Volt-1.89e-01 Chrg (e)-9.12e+00 drf cm/s 1.45e+05 Heating: 3.82e-20 Frac tot 3.28e-03
+ gra-ism08  *  DustTemp 6.50e+01 Pot Volt-3.89e-01 Chrg (e)-2.57e+01 drf cm/s 1.54e+05 Heating: 2.81e-20 Frac tot 2.42e-03
+ gra-ism09  *  DustTemp 6.10e+01 Pot Volt-5.45e-01 Chrg (e)-5.23e+01 drf cm/s 1.62e+05 Heating: 2.10e-20 Frac tot 1.81e-03
+ gra-ism10  *  DustTemp 5.69e+01 Pot Volt-6.64e-01 Chrg (e)-9.34e+01 drf cm/s 1.69e+05 Heating: 1.59e-20 Frac tot 1.37e-03
+ sil-ism01  *  DustTemp 8.53e+01 Pot Volt 2.61e-01 Chrg (e) 7.27e-02 drf cm/s 4.96e+04 Heating: 2.09e-19 Frac tot 1.80e-02
+ sil-ism02  *  DustTemp 8.39e+01 Pot Volt 2.93e-01 Chrg (e) 7.84e-01 drf cm/s 6.46e+04 Heating: 1.73e-19 Frac tot 1.49e-02
+ sil-ism03  *  DustTemp 8.19e+01 Pot Volt 2.50e-01 Chrg (e) 1.25e+00 drf cm/s 8.95e+04 Heating: 1.37e-19 Frac tot 1.18e-02
+ sil-ism04  *  DustTemp 7.93e+01 Pot Volt 1.37e-01 Chrg (e) 8.20e-01 drf cm/s 1.25e+05 Heating: 1.04e-19 Frac tot 8.97e-03
+ sil-ism05  *  DustTemp 7.62e+01 Pot Volt 4.68e-03 Chrg (e)-9.08e-01 drf cm/s 1.54e+05 Heating: 7.70e-20 Frac tot 6.62e-03
+ sil-ism06  *  DustTemp 7.27e+01 Pot Volt-2.60e-01 Chrg (e)-8.57e+00 drf cm/s 1.70e+05 Heating: 5.60e-20 Frac tot 4.82e-03
+ sil-ism07  *  DustTemp 6.89e+01 Pot Volt-5.08e-01 Chrg (e)-2.29e+01 drf cm/s 1.81e+05 Heating: 4.03e-20 Frac tot 3.47e-03
+ sil-ism08  *  DustTemp 6.51e+01 Pot Volt-7.21e-01 Chrg (e)-4.69e+01 drf cm/s 1.88e+05 Heating: 2.91e-20 Frac tot 2.50e-03
+ sil-ism09  *  DustTemp 6.12e+01 Pot Volt-8.89e-01 Chrg (e)-8.47e+01 drf cm/s 1.90e+05 Heating: 2.12e-20 Frac tot 1.83e-03
+ sil-ism10     DustTemp 5.75e+01 Pot Volt-1.01e+00 Chrg (e)-1.42e+02 drf cm/s 1.90e+05 Heating: 1.58e-20 Frac tot 1.36e-03
+ Molecules     CH/Ctot: 7.16e-17 CH+/Ctot 4.30e-16 CO/Ctot: 1.52e-23 CO+/Ctot 2.66e-23 H2O/Otot 6.59e-30 OH/Ototl 1.19e-17
+ Lithium       2.94e-06 2.89e-02 4.28e-01 5.43e-01 Berylliu 0.00e+00 0.00e+00 0.00e+00 0.00e+00 0.00e+00 sec ion: 9.65e-14
+ Boron         1.24e-05 6.60e-03 4.48e-02 9.49e-01 7.50e-06 0.00e+00
+ Carbon        2.01e-06 8.52e-04 6.10e-02 2.14e-01 7.25e-01 3.18e-06 0.00e+00 H2O+/O   1.12e-30 OH+/Otot 5.63e-18 Hex(tot) 0.00e+00
+ Nitrogen      1.61e-06 3.06e-04 5.05e-02 3.38e-01 3.99e-01 2.13e-01 6.72e-07 0.00e+00 O2/Ototl 8.40e-26 O2+/Otot 2.42e-26
+ Oxygen        6.89e-07 9.91e-05 2.09e-02 3.23e-01 5.07e-01 1.49e-01 5.08e-07 0.00e+00 0.00e+00
+ Fluorine      1.31e-06 5.10e-05 1.33e-02 2.02e-01 6.59e-01 1.26e-01 0.00e+00 0.00e+00 0.00e+00 0.00e+00
+ Neon          1.44e-06 2.40e-05 1.24e-02 2.19e-01 6.59e-01 1.09e-01 0.00e+00 0.00e+00 0.00e+00 0.00e+00 0.00e+00
+ Sodium        1.72e-07 9.05e-06 4.78e-03 1.72e-01 8.24e-01 8.31e-07 0.00e+00 0.00e+00 0.00e+00 0.00e+00 0.00e+00 0.00e+00
+ Magnesium     7.22e-07 1.14e-05 7.95e-03 2.00e-01 7.92e-01 1.49e-06 0.00e+00 0.00e+00 0.00e+00 0.00e+00 0.00e+00 0.00e+00 0.00e+00
+ Aluminium  0  2.92e-07 1.02e-04 1.03e-03 1.33e-01 8.65e-01 3.16e-06 0.00e+00 0.00e+00 0.00e+00 0.00e+00 0.00e+00 0.00e+00 0.00e+00
+ Silicon    0  1.59e-06 9.67e-04 2.69e-02 1.24e-01 8.48e-01 3.94e-06 0.00e+00 0.00e+00 0.00e+00 0.00e+00 0.00e+00 0.00e+00 0.00e+00
+ Phosphorus 0  2.55e-06 6.37e-03 9.25e-02 2.81e-01 3.08e-01 3.12e-01 8.56e-07 0.00e+00 0.00e+00 0.00e+00 0.00e+00 0.00e+00 0.00e+00
+ Su

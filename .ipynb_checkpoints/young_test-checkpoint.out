@@ -1,0 +1,32 @@
+                                                          Cloudy 23.01
+                                                         www.nublado.org
+
+                                                  PRNG seed: 0xde46afed47b24ce1
+
+                       **************************************23Jul25**************************************
+                       *                                                                                 *
+                       * title young test                                                                *
+                       * Ionization parameter -2                                                         *
+                       * table SED "fsps_young.ascii"                                                    *
+                       * hden 3                                                                          *
+                       * cmb                                                                             *
+                       * iterate to convergence                                                          *
+                       * stop temperature 2 K                                                            *
+                       * stop neutral column density  0.1% of total H column                             *
+                       * set temperature floor 2.73                                                      *
+                       * set nchrg 2                                                                     *
+                       * normalize to "H  1" 18756.21 angstroms                                          *
+                       * no level 2 lines                                                                *
+                       * abundances ism                                                                  *
+                       * #<<< mie_read_opc reading file -- graphite_ism_10.opc                      >>>> *
+                       * #<<< mie_read_opc reading file -- silicate_ism_10.opc                      >>>> *
+                       * grains ISM abundance scaling 1.5                                                *
+                       * #<<< mie_read_opc reading file -- graphite_ism_10.opc                      >>>> *
+ File graphite_ism_10.opc has already been read before, was this intended ?
+                       * #<<< mie_read_opc reading file -- silicate_ism_10.opc                      >>>> *
+ File silicate_ism_10.opc has already been read before, was this intended ?
+                       * set save line origins                                                           *
+ There should have been an option on this command.
+ Valid options for SET SAVE are summarized in Hazy 1 Miscellaneous Commands, and are:
+ HASH, LINEWIDTH, RESOLUTION, PREFIX, FLUSH, LUMINOSITY OLD.
+ [Stop in ParseSet at parse_set.cpp:1885, something went wrong]
