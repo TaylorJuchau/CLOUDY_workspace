@@ -1,0 +1,22 @@
+                                                          Cloudy 25.00
+                                                         www.nublado.org
+
+                                                  PRNG seed: 0x086977e492dc463a
+
+                       **************************************25Aug25**************************************
+                       *                                                                                 *
+                       * title Orion model log nH=4.11 log U=-2.67                                       *
+                       * blackbody 39000 K                                                               *
+                       * luminosity 49                                                                   *
+                       * radius 17.5                                                                     *
+                       * hden 4.111111111111111                                                          *
+                       * ionization parameter -2.666666666666667                                         *
+                       * abundances GASS no grains                                                       *
+                       * sphere                                                                          *
+                       * stop temperature 4000 K                                                         *
+                       * stop column density 22                                                          *
+                       * iterate to convergence                                                          *
+                       * set save prefix "model_nH4.11_U-2.67"                                           *
+                       * save lines list "/project/galaxies/tjuchau/projects/CLOUDY_scripts/Galaxy_class_project2/inputs/linelist.dat" ".lines"*
+DISASTER could not open SAVE LINE LIST file .lines 
+ [Stop in ParseSave at parse_save.cpp:1479, something went wrong]

@@ -1,0 +1,13 @@
+title Orion model log_nH=5.00 log_U=-1.00
+blackbody 39000 K
+luminosity 49
+radius 17.5
+hden 5.0
+ionization parameter -1.0
+abundances GASS no grains
+sphere
+stop temperature 4000 K
+stop column density 22
+iterate to convergence
+set save prefix "model_nH5.00_U-1.00"
+save lines list "/project/galaxies/tjuchau/projects/CLOUDY_scripts/Galaxy_class_project2/inputs/linelist.dat" ".lines"

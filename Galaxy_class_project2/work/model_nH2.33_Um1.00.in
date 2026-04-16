@@ -1,0 +1,10 @@
+title Orion model log_nH=2.33 log_U=-1.00
+blackbody 40000 K
+hden 2.333333333333333
+ionization parameter -1.0
+abundances GASS
+sphere
+stop temperature 4000 K
+stop column density 22
+iterate to convergence
+save overview "model_nH2.33_Um1.00.txt"
