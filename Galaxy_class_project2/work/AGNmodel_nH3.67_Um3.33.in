@@ -1,0 +1,11 @@
+title AGN log_nH=3.67 log_U=-3.33
+hden 3.6666666666666665
+table AGN
+stop efrac 0.01
+ionization parameter -3.3333333333333335
+abundances GASS
+sphere
+stop temperature 4000 K
+stop column density 22
+iterate to convergence
+save overview "AGNmodel_nH3.67_Um3.33.txt"

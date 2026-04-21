@@ -1,6 +1,7 @@
-title Orion model log_nH=5.00 log_U=-1.00
-blackbody 40000 K
+title AGN log_nH=5.00 log_U=-1.00
 hden 5.0
+table AGN
+stop efrac 0.01
 ionization parameter -1.0
 abundances GASS
 sphere
