@@ -1,7 +1,7 @@
                                                           Cloudy 25.00
                                                          www.nublado.org
 
-                                                  PRNG seed: 0xcd6eacefb7197e28
+                                                  PRNG seed: 0x674504b896d9fed4
 
                        **************************************25Aug25**************************************
                        *                                                                                 *
@@ -1319,7 +1319,7 @@ C  3                1906.68A    -2.852    0.4233      Ne 4                542.07
    <a>:2.56E-09  erdeFe1.3E+24  Tcompt2.89E+11  Tthr3.75E+11  <Tden>: 1.05E+04  <dens>:2.27E-23  <MolWgt>6.30E-01
      Mean Jeans  l(cm)1.25E+21  M(sun)1.17E+07  smallest:     len(cm):7.65E+20  M(sun):2.68E+06  a_ox tran: -1.42
  Rion:1.000E+30  Dist:0.00E+00  Diam:0.000E+00
- Hatom level 70  HatomType: add  HInducImp  F  He tot level: 63  He2 level:   70  ExecTime    80.6
+ Hatom level 70  HatomType: add  HInducImp  F  He tot level: 63  He2 level:   70  ExecTime    83.2
  ConvrgError(%)  <eden>  0.049  MaxEden  0.366  <H-C>   0.10  Max(H-C)    0.49  <Press>   0.000  MaxPrs er  0.000
   Continuity(%)  chng Te   5.1  elec den   5.7  n(H2)    0.0  n(CO)        0.0
 
@@ -2545,7 +2545,7 @@ Blnd                3587.17A    -4.781    0.0050      Cl 2                8578.7
    <a>:2.55E-09  erdeFe1.3E+24  Tcompt2.89E+11  Tthr3.75E+11  <Tden>: 1.05E+04  <dens>:2.27E-23  <MolWgt>6.30E-01
      Mean Jeans  l(cm)1.25E+21  M(sun)1.16E+07  smallest:     len(cm):7.62E+20  M(sun):2.65E+06  a_ox tran: -1.42
  Rion:1.000E+30  Dist:0.00E+00  Diam:0.000E+00
- Hatom level 70  HatomType: add  HInducImp  F  He tot level: 63  He2 level:   70  ExecTime   149.7
+ Hatom level 70  HatomType: add  HInducImp  F  He tot level: 63  He2 level:   70  ExecTime   150.0
  ConvrgError(%)  <eden>  0.047  MaxEden  0.351  <H-C>   0.09  Max(H-C)    0.47  <Press>   0.000  MaxPrs er  0.000
   Continuity(%)  chng Te   4.8  elec den   5.8  n(H2)    0.0  n(CO)        0.0
 
@@ -3769,7 +3769,7 @@ Blnd                3587.17A    -4.781    0.0050      Cl 2                8578.7
    <a>:2.55E-09  erdeFe1.3E+24  Tcompt2.89E+11  Tthr3.76E+11  <Tden>: 1.05E+04  <dens>:2.27E-23  <MolWgt>6.30E-01
      Mean Jeans  l(cm)1.25E+21  M(sun)1.16E+07  smallest:     len(cm):7.63E+20  M(sun):2.66E+06  a_ox tran: -1.42
  Rion:1.000E+30  Dist:0.00E+00  Diam:0.000E+00
- Hatom level 70  HatomType: add  HInducImp  F  He tot level: 63  He2 level:   70  ExecTime   219.0
+ Hatom level 70  HatomType: add  HInducImp  F  He tot level: 63  He2 level:   70  ExecTime   216.7
  ConvrgError(%)  <eden>  0.046  MaxEden  0.359  <H-C>   0.10  Max(H-C)    0.48  <Press>   0.000  MaxPrs er  0.000
   Continuity(%)  chng Te   4.8  elec den   5.8  n(H2)    0.0  n(CO)        0.0
 
@@ -4074,5 +4074,5 @@ AGN log nH=1.00 log U=-1.67
          1 mean step length searches/chemistry step
 ----------------------------------------------------
 
- Cloudy ends: 174 zones, 3 iterations. (single thread) ExecTime(s) 219.03
+ Cloudy ends: 174 zones, 3 iterations. (single thread) ExecTime(s) 216.74
  [Stop in cdMain at maincl.cpp:590, Cloudy exited OK]
