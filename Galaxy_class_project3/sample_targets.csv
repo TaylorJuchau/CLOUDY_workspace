@@ -1,0 +1,5 @@
+id,common_name,activity_class,redshift,distance_mpc,notes
+NGC0628,M74,normal star-forming spiral,0.00219,9.84,control galaxy with no strong AGN; face-on late-type spiral
+NGC1097,NGC 1097,Seyfert/LINER + circumnuclear star formation,0.00424,14.5,mixed case: weak/moderate AGN plus star-forming ring
+NGC1068,M77,strong Seyfert 2,0.00379,14.4,strong obscured AGN; classic AGN-dominated mid-IR case
+NGC4151,NGC 4151,Seyfert 1.5,0.00332,15.8,broad-line AGN; variable nucleus; students should discuss caveats

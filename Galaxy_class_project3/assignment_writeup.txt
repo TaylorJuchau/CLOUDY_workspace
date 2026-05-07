@@ -1,0 +1,187 @@
+Galaxy SED Fitting with CIGALE: Normal Galaxies, Active Galaxies, and AGN Contamination
+
+Purpose
+
+In this project you will fit multiwavelength spectral energy distributions (SEDs) of nearby galaxies using CIGALE. The sample includes both normal star-forming galaxies and active galaxies. Your goal is not to produce a definitive publication-quality decomposition, but to learn how UV--optical--IR broadband data constrain galaxy properties and how the inferred properties change when an AGN component is included.
+
+Scientific goals
+
+By the end of the project, you should be able to:
+
+1. Explain how UV, optical, near-IR, and mid-IR bands constrain different parts of a galaxy SED.
+2. Use CIGALE output to estimate basic physical properties: stellar mass, star formation rate, attenuation, dust luminosity, and dust mass.
+3. Compare a galaxy-only SED fit with a galaxy+AGN SED fit.
+4. Identify which galaxies show evidence for an AGN contribution in their broadband SEDs.
+5. Estimate whether the AGN contribution is important at optical wavelengths, not just in the infrared.
+6. Discuss degeneracies among young stars, dust attenuation, warm dust, and AGN-heated dust.
+
+Sample
+
+Fit the following four nearby galaxies:
+
+1. NGC 628 / M74: normal star-forming spiral; control object.
+2. NGC 1097: barred spiral with a weak/moderate active nucleus and circumnuclear star formation.
+3. NGC 1068 / M77: strong, obscured Seyfert 2; classic AGN host.
+4. NGC 4151: broad-line Seyfert 1.5; strong but variable active nucleus.
+
+The sample is deliberately small. You should spend your time understanding the fits and the SED components, not running a huge survey.
+
+Data
+
+Use the provided script to retrieve DustPedia aperture-matched photometry and convert it into a CIGALE input file. DustPedia provides matched-aperture multiwavelength photometry for nearby galaxies using data from GALEX, SDSS, 2MASS, WISE, Spitzer, Herschel, and related surveys. For this assignment we will use a compact UV--optical--near-IR--mid-IR subset:
+
+- GALEX FUV and NUV
+- SDSS u, g, r, i, z
+- 2MASS J, H, Ks
+- WISE W1, W2, W3, W4
+
+These bands are sufficient to see the major SED components: young stars in the UV, older stars in the optical/near-IR, dust attenuation, and warm dust/AGN contributions in the mid-IR.
+
+Software setup
+
+Recommended setup:
+
+conda create -n cigale-class python=3.12 -y
+conda activate cigale-class
+pip install pcigale astropy pyvo pandas numpy matplotlib
+
+Check that the commands work:
+
+pcigale --help
+pcigale-filters list
+
+Generating the photometry file
+
+From the project directory, run:
+
+python make_cigale_photometry_from_dustpedia.py
+
+This should write:
+
+cigale_dustpedia_input.csv
+
+This file is the CIGALE input table. It contains one row per galaxy. The first columns are id, redshift, and distance. The remaining columns are flux densities and uncertainties. CIGALE expects broadband flux densities in mJy. The column names must match filters known to CIGALE; if your CIGALE installation has changed filter names, check with:
+
+pcigale-filters list | grep -i galex
+pcigale-filters list | grep -i wise
+
+Running the fits
+
+You will run two fits.
+
+Run 1: galaxy-only model, no AGN component.
+Use:
+
+pcigale_noAGN.ini
+
+Run 2: galaxy+AGN model.
+Use:
+
+pcigale_AGN.ini
+
+Recommended directory structure:
+
+mkdir run_noAGN run_AGN
+cp cigale_dustpedia_input.csv pcigale_noAGN.ini run_noAGN/
+cp cigale_dustpedia_input.csv pcigale_AGN.ini run_AGN/
+
+cd run_noAGN
+cp pcigale_noAGN.ini pcigale.ini
+pcigale check
+pcigale run
+pcigale-plots sed
+
+cd ../run_AGN
+cp pcigale_AGN.ini pcigale.ini
+pcigale check
+pcigale run
+pcigale-plots sed
+
+If pcigale check fails, read the error message carefully. The most likely issues are filter-name mismatches or parameter-name differences between CIGALE versions. Do not silently ignore failed bands.
+
+Model setup
+
+The starter configuration uses:
+
+- delayed star-formation history
+- Bruzual & Charlot 2003 stellar populations
+- nebular emission
+- Calzetti-like attenuation
+- Draine & Li 2014 dust emission
+- Fritz et al. AGN torus component for the AGN run
+- redshifting module
+
+The parameter grid is intentionally modest. It is designed to finish quickly on a laptop and to support qualitative comparison among galaxies. It is not intended to be a final research-grade parameter grid.
+
+Required outputs
+
+For each galaxy, report the following from the CIGALE results:
+
+1. reduced chi-square or goodness-of-fit indicator
+2. stellar mass
+3. star formation rate
+4. dust attenuation, preferably A_V or the closest CIGALE attenuation quantity available
+5. dust luminosity
+6. dust mass, if available
+7. AGN fraction from the AGN run
+8. estimated AGN fraction at optical wavelengths, for example around rest-frame 0.44, 0.55, and 0.80 microns
+
+Important note about AGN fraction
+
+CIGALE's AGN fraction parameter is usually a bolometric or infrared-related AGN fraction, depending on the AGN module. It is not automatically the fraction of the observed optical light produced by the AGN. For this assignment, you should distinguish between:
+
+- the CIGALE-reported AGN fraction parameter, and
+- the wavelength-dependent AGN contribution to the model SED.
+
+To estimate the optical AGN fraction, inspect the best-fit model SED components or use the optional helper script:
+
+python estimate_optical_agn_fraction.py out/NAME_best_model.fits
+
+Because CIGALE output column names may vary by version, you may need to inspect the available columns and choose the appropriate total and AGN component columns manually.
+
+Suggested result table
+
+Make a table like this:
+
+Galaxy | Class | chi2 no AGN | chi2 with AGN | log Mstar | log SFR | A_V | log Ldust | log Mdust | CIGALE fracAGN | fAGN(0.44 um) | fAGN(0.55 um) | fAGN(0.80 um)
+
+You may use log quantities where appropriate. State the units used by CIGALE.
+
+Figures
+
+Include at least one SED figure for each galaxy. The figure should show:
+
+- observed photometric points
+- the best-fit total SED
+- major model components, if available
+
+For at least two galaxies, show or discuss the difference between the no-AGN and AGN fits.
+
+Questions to answer in your write-up
+
+1. Which galaxies are well fit without an AGN component? Which are not?
+2. Which galaxies show the strongest evidence for an AGN contribution?
+3. Is the AGN contribution primarily an infrared effect, or does it matter in the optical?
+4. Which bands seem most important for detecting the AGN component?
+5. How does adding an AGN component change the inferred stellar mass and star formation rate?
+6. Does the normal galaxy control object acquire a spurious AGN fraction? If so, what does that tell you about degeneracy and model freedom?
+7. Are the results for NGC 4151 potentially affected by variability and non-simultaneous photometry?
+8. What would you change if this were a publication-quality project?
+
+Expected length
+
+Your report should be about 3--5 pages, not counting figures and tables. A concise report with clear plots and a thoughtful discussion is better than a long report that simply lists CIGALE output values.
+
+Grading emphasis
+
+This project will be evaluated mainly on interpretation:
+
+- correct execution of the two CIGALE runs
+- clear comparison of galaxy-only and galaxy+AGN fits
+- sensible extraction of galaxy parameters from the output
+- thoughtful discussion of AGN contamination and degeneracies
+- awareness of limitations of broadband SED fitting
+
+Caveats
+
+DustPedia photometry is whole-galaxy aperture-matched photometry. This is excellent for a consistent galaxy SED, but the AGN can be diluted by host galaxy light. NGC 1068 and NGC 4151 are also special cases: they are nearby and well studied, but their nuclear emission, dust geometry, aperture effects, and variability make them more complicated than idealized textbook examples. Treat the numerical output as model-dependent physical estimates, not as exact truth.
